@@ -47,10 +47,14 @@ window.onload = () => {
       const input = document.createElement("input");
       input.type = "text";
       input.id = letter + number;
+      input.onchange = update;
+
       input.ariaLabel = input.id;
       container.appendChild(input);
     });
   });
 };
 
-const update = (event) => {};
+const update = (event) => {
+  console.log("updating", event);
+};
