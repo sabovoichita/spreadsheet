@@ -32,7 +32,7 @@ const charRange = (start, end) =>
   );
 
 const evalFormula = (x, cells) => {
-  const idToText = (id) => cells.find((cell) => cell.id === id);
+  const idToText = (id) => cells.find((cell) => cell.id === id).value;
 };
 
 window.onload = () => {
