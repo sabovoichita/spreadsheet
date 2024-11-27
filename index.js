@@ -10,6 +10,8 @@ const infixEval = (str, regex) =>
     infixToFunction[operator](parseFloat(arg1), parseFloat(arg2))
   );
 
+const highPrecedence = (str) => {};
+
 const isEven = (num) => num % 2 === 0;
 
 const sum = (nums) => nums.reduce((acc, el) => acc + el);
