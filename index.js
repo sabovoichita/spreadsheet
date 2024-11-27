@@ -31,6 +31,8 @@ const charRange = (start, end) =>
     String.fromCharCode(code)
   );
 
+const evalFormula = (x, cells) => {};
+
 window.onload = () => {
   const container = document.getElementById("container");
   const createLabel = (name) => {
