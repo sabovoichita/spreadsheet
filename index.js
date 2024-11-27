@@ -41,6 +41,7 @@ const evalFormula = (x, cells) => {
     };
     return inner;
   };
+  const addCharacters = (character1) => {};
 };
 
 window.onload = () => {
