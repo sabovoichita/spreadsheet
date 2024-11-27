@@ -6,9 +6,8 @@ const infixToFunction = {
 };
 
 const infixEval = (str, regex) =>
-  str.replace(
-    regex,
-    (_match, arg1, operator, arg2) => infixToFunction[operator]
+  str.replace(regex, (_match, arg1, operator, arg2) =>
+    infixToFunction[operator](arg1, arg2)
   );
 
 const isEven = (num) => num % 2 === 0;
