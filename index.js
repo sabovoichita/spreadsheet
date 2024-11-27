@@ -58,5 +58,8 @@ window.onload = () => {
 const update = (event) => {
   const element = event.target;
   const value = element.value.replace(/\s/g, "");
-  console.log("updating", event.target);
+  if (!value.includes(element.id)) {
+  }
+
+  console.log("updating", value.includes(element.id));
 };
