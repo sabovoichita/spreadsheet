@@ -56,5 +56,6 @@ window.onload = () => {
 };
 
 const update = (event) => {
-  console.log("updating", event);
+  const element = event.target;
+  console.log("updating", event.target);
 };
