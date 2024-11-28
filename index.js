@@ -39,7 +39,9 @@ const spreadsheetFunctions = {
   median,
 };
 
-const applyFunction = (str) => {};
+const applyFunction = (str) => {
+  const noHigh = highPrecedence(str);
+};
 
 const range = (start, end) =>
   Array(end - start + 1)
