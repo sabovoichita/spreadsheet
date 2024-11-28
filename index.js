@@ -42,6 +42,7 @@ const spreadsheetFunctions = {
 const applyFunction = (str) => {
   const noHigh = highPrecedence(str);
   const infix = /([\d.]+)([+-]([\d.]+))/;
+  const str2 = infixEval(noHigh, infix);
 };
 
 const range = (start, end) =>
