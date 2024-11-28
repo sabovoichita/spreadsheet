@@ -50,6 +50,12 @@ const spreadsheetFunctions = {
     const [start, end] = nums;
     return Math.floor(Math.random() * (start + end - start)) + start;
   },
+  range: (nums) => {
+    if (nums.length < 2)
+      throw new Error("Array must have at least two numbers");
+    const [start, end] = nums;
+    return range(start, end);
+  },
 };
 
 const applyFunction = (str) => {
