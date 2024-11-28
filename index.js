@@ -42,6 +42,7 @@ const spreadsheetFunctions = {
   lasttwo: (nums) => nums.slice(-2),
   has2: (nums) => nums.includes(2),
   increment: (nums) => nums.map((num) => num + 1),
+  someeven: (nums) => nums.some((nums) => nums % 2 === 0),
 };
 
 const applyFunction = (str) => {
