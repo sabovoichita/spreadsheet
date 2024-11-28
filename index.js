@@ -57,6 +57,7 @@ const spreadsheetFunctions = {
     return range(start, end);
   },
   nodupes: (nums) => [...new Set(nums)], // Removes duplicates
+  "": (nums) => nums,
 };
 
 const applyFunction = (str) => {
