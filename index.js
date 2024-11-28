@@ -44,6 +44,12 @@ const spreadsheetFunctions = {
   increment: (nums) => nums.map((num) => num + 1),
   someeven: (nums) => nums.some((nums) => nums % 2 === 0),
   everyeven: (nums) => nums.every((nums) => nums % 2 === 0),
+  random: (nums) => {
+    if (nums.length < 2)
+      throw new Error("Array must have at least two numbers");
+    const [start, end] = nums;
+    return Math.floor(Math.random() * (start + end - start)) + start;
+  },
 };
 
 const applyFunction = (str) => {
